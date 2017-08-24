@@ -1,0 +1,141 @@
+﻿
+
+#user {
+    border: solid;
+    border-color: blue;
+    background-color: coral;
+    height: 70px;
+    width: 1300px;
+}
+#user input {
+        
+        background-color: coral;
+    
+        width: 60px;
+    }
+
+#first_up {
+    margin-top:10px;
+    border: solid;
+    border-color: blue;
+    background-color: mistyrose;
+    height: 70px;
+    width: 1300px;
+}
+
+
+#second_up {
+    margin-top: 10px;
+    border: solid;
+    border-color: blue;
+    background-color: mistyrose;
+    height: 250px;
+    width: 1300px;
+}
+
+#lineDiv {
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 230px;
+    height: 150px;
+    background-color: antiquewhite;
+    float: left;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+#lineDiv_two {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 380px;
+    height: 150px;
+    background-color: #fffbb4;
+    float: left;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+#learnMore {
+    background-color: #ffd07b;
+}
+
+#lineDiv_three {
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 250px;
+    height: 150px;
+    background-color: #ffffff;
+    float: left;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+#scenario {
+    margin-left: 550px;
+}
+
+#startJob {
+    clear: both;
+    background: linear-gradient();
+    background-color: #ffd07b;
+    margin-top: 30px;
+    width: 270px;
+    margin-right: 520px;
+    margin-left: 520px;
+    float: right;
+}
+
+#third_up {
+    background-color: #ffffff;
+    height: 250px;
+    width: 1300px;
+    border: 2px solid blue;
+}
+
+#fourth_up {
+    background-color: #ffffff;
+    height: 250px;
+    width: 1300px;
+    border: 2px solid blue;
+}
+
+#fifth_up {
+    background-color: mistyrose;
+    height: 110px;
+    width: 1300px;
+    border: 2px solid blue;
+}
+
+#logo p {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: yellow;
+    width: 50px;
+    float: left;
+}
+
+#log input {
+    margin-top: 20px;
+    margin-left: 760px;
+    background-color: mistyrose;
+    float: left;
+    width: 50px;
+}
+
+
+.logNreg {
+    white-space: nowrap
+}
+
+#soc {
+    margin-left: 100px;
+}
+
+.logNreg input {
+    margin-top: 20px;
+    margin-left: 400px;
+    background-color: mistyrose;
+    width: 80px;
+    display: inline-block;
+}
