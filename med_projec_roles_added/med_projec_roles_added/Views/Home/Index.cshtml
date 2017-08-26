@@ -1,0 +1,65 @@
+﻿<link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/Home.css")" />
+@{
+    ViewBag.Title = "Home";
+}
+<body>
+    <div id="user">
+         @Html.Partial("_LoginPartial")
+        @if(this.User.IsInRole("Doctor"))
+        {
+            @Html.Partial("DoctorPagePartial")
+        }
+        @if (this.User.IsInRole("Pacient"))
+        {
+            @Html.Partial("PacientPagePartial")
+        }
+    </div>
+    <div id="first_up">
+        <div style=" width:100%; height:1px; clear:both;">.</div><div style=" width:100%; height:1px; clear:both;">.</div>
+        <div id="logo">
+            <p>LOGO</p>
+        </div>
+        <div class="logNreg">
+          
+        </div>
+        <div style=" width:100%; height:1px; clear:both;">.</div><div style=" width:100%; height:1px; clear:both;">.</div>
+    </div>
+    <div id="second_up">
+        <button type="button" id="lineDiv_two" (click)="redirectToStartJob()">Button "Start Job"</button>
+        <button type="button" id="lineDiv_two" (click)="redirectToNavigationMenu()">Navigation</button>
+        <button type="button" id="lineDiv_two">Navigation-add</button>
+    </div>
+    <div style=" width:100%; height:10px; clear:both;">.</div>
+    <div id="third_up">
+        <button type="button" id="startJob" (click)="redirectToStartJob()">Start Job</button>
+
+        <div id="lineDiv">Registration process</div>
+        <div id="lineDiv">Description of booking medicine stuff after registration</div>
+        <div id="lineDiv">Description of platform posibilities  </div>
+    </div>
+    <div style=" width:100%; height:10px; clear:both;">.</div>
+    <div id="fourth_up">
+        <p id="scenario">Working system scenario</p>
+        <div id="lineDiv_three">
+            <p><br /><br /><br /><br />Keep tracking your car.</p>
+            <button type="button" id="learnMore">Learn more</button>
+        </div>
+        <div id="lineDiv_three">
+            <p><br /><br /><br /><br />Keep tracking your child.</p>
+            <button type="button" id="learnMore">Learn more</button>
+        </div>
+        <div id="lineDiv_three">
+            <p><br /><br /><br /><br />Help people with disabilities.</p>
+            <button type="button" id="learnMore">Learn more</button>
+        </div>
+        <div id="lineDiv_three">
+            <p><br /><br /><br /><br />Vote online.</p>
+            <button type="button" id="learnMore">Learn more</button>
+        </div>
+    </div>
+    <div style=" width:100%; height:10px; clear:both;">.</div>
+    <div id="fifth_up">
+        <p id="soc"><br /><br />Find us on Facebook!</p>
+        <p id="soc">About us</p>
+    </div>
+</body>
