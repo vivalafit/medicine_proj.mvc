@@ -1,7 +1,12 @@
-﻿
+﻿@using Microsoft.AspNet.Identity
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Pacient VIew</h2>
+<h2>Pacient View</h2>
 
+<h1>Информация о пациенте : @User.Identity.GetUserName() </h1>
+
+<h1>Диагнозы : @ViewBag.PacientInfo</h1>
+
+@Html.ActionLink("Домой ", "Index", "Home")

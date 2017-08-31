@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "GetUsers";
+}
+
+<h2>GetUsers</h2>
+
+@model med_projec_roles_added.Models.GroupedUserViewModel
+<div>
+    @foreach (var user in Model.Pacient)
+    {
+        <p>
+            <strong>@user.Username | @user.Roles </strong>
+        </p>
+    }
+
+    @foreach (var user in Model.Doctor)
+    {
+        <p>
+            <strong>@user.Username | @user.Roles </strong>
+        </p>
+    }
+</div>

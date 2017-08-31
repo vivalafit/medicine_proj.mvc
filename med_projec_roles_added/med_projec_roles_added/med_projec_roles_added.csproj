@@ -198,9 +198,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708251246321_InitialCreate.cs" />
+    <Compile Include="Migrations\201708251246321_InitialCreate.Designer.cs">
+      <DependentUpon>201708251246321_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708280954051_PacientInfo.cs" />
+    <Compile Include="Migrations\201708280954051_PacientInfo.Designer.cs">
+      <DependentUpon>201708280954051_PacientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PacientEdit.cs" />
+    <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -269,6 +280,9 @@
     <Content Include="Views\Pacient\Index.cshtml" />
     <Content Include="Views\Shared\PacientPagePartial.cshtml" />
     <Content Include="Views\Shared\DoctorPagePartial.cshtml" />
+    <Content Include="Views\Doctor\GetUsers.cshtml" />
+    <Content Include="Views\Doctor\GetUsers_Partial.cshtml" />
+    <Content Include="Views\Doctor\EditPacientInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,6 +301,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708251246321_InitialCreate.resx">
+      <DependentUpon>201708251246321_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708280954051_PacientInfo.resx">
+      <DependentUpon>201708280954051_PacientInfo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

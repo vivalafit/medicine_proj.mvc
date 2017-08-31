@@ -81,6 +81,8 @@ namespace med_projec_roles_added.Models
         public string ConfirmPassword { get; set; }
         
         public string Name { get; set; }
+
+        public string PacientInfo { get; set; }
     }
 
     public class ResetPasswordViewModel

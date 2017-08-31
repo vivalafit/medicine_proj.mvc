@@ -1,7 +1,8 @@
-﻿
+﻿@using Microsoft.AspNet.Identity
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>DoctorPage</h2>
-
+<h2>Здравствуйте, @User.Identity.GetUserName()</h2>
+    
+@Html.Partial("GetUsers_Partial")
