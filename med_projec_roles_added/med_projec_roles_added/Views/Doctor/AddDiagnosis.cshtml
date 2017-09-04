@@ -1,0 +1,14 @@
+﻿@model med_projec_roles_added.Models.ApplicationUser
+@{
+    ViewBag.Title = "AddDiagnosis";
+}
+
+<h2>AddDiagnosis</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(model => model.Email)
+    @Html.EditorFor(model => model.PacientInfo)
+
+    <input type="submit" value="Save" />
+}

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<med_projec_roles_added.Models.ApplicationUser>
+
+<div id="searchresults">
+    <h3>Ваш пациент найден! </h3>
+    @foreach (var user in Model)
+    {
+
+        <p>
+            <strong>@user.Email | @Html.ActionLink("Обновить информацию о пациенте ", "EditPacientInfo", "Doctor", new { name = user.Email }, null) | @Html.ActionLink("Детали", "Details", "Doctor", new { name = user.Email }, null)</strong>
+        </p>
+
+    }
+</div>

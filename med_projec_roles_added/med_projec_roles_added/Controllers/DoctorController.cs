@@ -70,6 +70,27 @@ namespace med_projec_roles_added.Controllers
 
             return View(pacient);
         }
-
+        [HttpPost]
+        public ActionResult PacientSearch(string name)
+        {
+            var all_pacients = db.Users.Where(a => a.Email.Contains(name)).ToList();
+            return PartialView(all_pacients);
+        }
+        [Route("Doctor/Details/{name}")]
+        public ActionResult Details(string name)
+        {
+            string username = name;
+            // Fetch the userprofile
+            ApplicationUser user = db.Users.FirstOrDefault(u => u.UserName.Equals(username));
+            ViewBag.Email = user.Email;
+            // Construct the viewmodel
+            ApplicationUser model = new ApplicationUser()
+            {
+                Email = user.Email,
+                PacientInfo = user.PacientInfo
+            };
+            return View(model);
+          
+        }
     }
 }

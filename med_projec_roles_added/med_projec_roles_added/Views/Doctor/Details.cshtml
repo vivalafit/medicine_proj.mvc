@@ -1,0 +1,18 @@
+﻿@model med_projec_roles_added.Models.ApplicationUser
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h2>Имя</h2>
+      <div>
+          @Html.DisplayFor(m => m.Email)
+      </div>
+    <h2>Диагноз</h2>
+      <div>
+          @Html.DisplayFor(m => m.PacientInfo)
+      </div>
+      @Html.ActionLink("Домой", "Index", "Doctor") 
+</div>

@@ -1,12 +1,19 @@
 ﻿
 @model med_projec_roles_added.Models.GroupedUserViewModel
 <div>
+
+    @using (Ajax.BeginForm("PacientSearch", new AjaxOptions { UpdateTargetId = "results" }))
+    {
+        <input type="text" name="name" />
+        <input type="submit" name="Search" />
+    }
+    <div id="results"></div>
     <h2>Список доступных пациентов</h2>
         @foreach (var user in Model.Pacient)
         {
            
             <p>
-                <strong>@user.Username | @ViewBag.Pacient | @Html.ActionLink("Обновить информацию о пациенте ", "EditPacientInfo", "Doctor",new {name = user.Username},null) </strong>
+                <strong>@user.Username | @ViewBag.Pacient | @Html.ActionLink("Обновить информацию о пациенте ", "EditPacientInfo", "Doctor",new {name = user.Username},null) | @Html.ActionLink("Детали", "Details", "Doctor", new { name = user.Username }, null)</strong>
             </p>
       
     }

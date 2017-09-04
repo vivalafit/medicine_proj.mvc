@@ -210,7 +210,6 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\PacientEdit.cs" />
     <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -283,6 +282,8 @@
     <Content Include="Views\Doctor\GetUsers.cshtml" />
     <Content Include="Views\Doctor\GetUsers_Partial.cshtml" />
     <Content Include="Views\Doctor\EditPacientInfo.cshtml" />
+    <Content Include="Views\Doctor\PacientSearch.cshtml" />
+    <Content Include="Views\Doctor\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
